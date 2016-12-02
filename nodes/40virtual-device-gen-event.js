@@ -70,9 +70,9 @@
 			var deviceId = (msg.payload && msg.payload.deviceId) ? msg.payload.deviceId : (msg.deviceId) ? msg.deviceId : node.deviceId;
 			if(!deviceId)
 				throw new Error("Device Id is undefined");
-      var device = (node.schema) ? deviceManager.getDevice(node.schema.deviceType, deviceId) : deviceManager.getDevicebyId(deviceId);
-    	if(!device){
-				node.warn("Device " + deviceId + " is off");
+                        var device = (node.schema) ? deviceManager.getDevice(node.schema.deviceType, deviceId) : deviceManager.getDevicebyId(deviceId);
+    	                if(!device){
+				node.warn("Device " + deviceId + " does not exist");
 				node.send(null);
 			}
 			else {
