@@ -17,6 +17,7 @@ npm install node-red-contrib-iot-virtual-device
 
 ### Nodes
 <img src="https://developer.ibm.com/iotplatform/wp-content/uploads/sites/24/2016/10/Virtual-IoT-Device.png"/>
+
 - **_Device Schema_** (configuration node) to define the device type
 - **_Start Device_** to create a new instance of a device type
 - **_Generate Event_** to send events to the IoT platform
